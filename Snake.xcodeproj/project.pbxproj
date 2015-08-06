@@ -248,13 +248,15 @@
 				TargetAttributes = {
 					DF8AE4141A1EB13500D690B6 = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = L4FET847JL;
 					};
 					DF8AE43D1A1EB14D00D690B6 = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = L4FET847JL;
 					};
 					DF8AE44A1A1EB14D00D690B6 = {
 						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = 9M5CS7L3FF;
+						DevelopmentTeam = L4FET847JL;
 					};
 				};
 			};
@@ -447,6 +449,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Snake/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -459,6 +462,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Snake/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -472,6 +476,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -491,6 +496,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				IBSC_MODULE = Snake_WatchKit_Extension;
 				INFOPLIST_FILE = "Snake Watch App/Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -504,6 +510,7 @@
 		DF8AE45D1A1EB14D00D690B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -519,6 +526,7 @@
 		DF8AE45E1A1EB14D00D690B6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Snake WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "${TARGET_NAME}";
