@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		83AA8DE0B0DBAF38DC12B8FA /* BuddyBuildSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EAE8F2EE5AFA2A6C9CE184A /* BuddyBuildSDK.framework */; };
+		A237008737C8809B9BCAC7A9 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52A52551D56CB9A7F4734F4C /* CoreText.framework */; };
 		DF3F46EF1A20213C00CEB540 /* apple.png in Resources */ = {isa = PBXBuildFile; fileRef = DF3F46ED1A20213C00CEB540 /* apple.png */; };
 		DF3F46F01A20213C00CEB540 /* snake_sprites.png in Resources */ = {isa = PBXBuildFile; fileRef = DF3F46EE1A20213C00CEB540 /* snake_sprites.png */; };
 		DF8AE41B1A1EB13500D690B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8AE41A1A1EB13500D690B6 /* AppDelegate.swift */; };
@@ -21,6 +23,7 @@
 		DF8AE4531A1EB14D00D690B6 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF8AE4521A1EB14D00D690B6 /* Interface.storyboard */; };
 		DF8AE4551A1EB14D00D690B6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF8AE4541A1EB14D00D690B6 /* Images.xcassets */; };
 		DF8AE4581A1EB14D00D690B6 /* Snake WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DF8AE43E1A1EB14D00D690B6 /* Snake WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E51709371A21C1FFB8DC03AA /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6893BD74484910FFF3B30F47 /* AssetsLibrary.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		52A52551D56CB9A7F4734F4C /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		5EAE8F2EE5AFA2A6C9CE184A /* BuddyBuildSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BuddyBuildSDK.framework; sourceTree = "<group>"; };
+		6893BD74484910FFF3B30F47 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		B9BACA047E7D695371BF563A /* Bridging-Header.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		DF3F46ED1A20213C00CEB540 /* apple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = apple.png; path = Snake/apple.png; sourceTree = SOURCE_ROOT; };
 		DF3F46EE1A20213C00CEB540 /* snake_sprites.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = snake_sprites.png; path = Snake/snake_sprites.png; sourceTree = SOURCE_ROOT; };
 		DF8AE4151A1EB13500D690B6 /* Snake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snake.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,6 +87,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83AA8DE0B0DBAF38DC12B8FA /* BuddyBuildSDK.framework in Frameworks */,
+				E51709371A21C1FFB8DC03AA /* AssetsLibrary.framework in Frameworks */,
+				A237008737C8809B9BCAC7A9 /* CoreText.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +112,7 @@
 				DF8AE44F1A1EB14D00D690B6 /* Snake Watch App */,
 				DF8AE43F1A1EB14D00D690B6 /* Frameworks */,
 				DF8AE4161A1EB13500D690B6 /* Products */,
+				B9BACA047E7D695371BF563A /* Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,6 +151,9 @@
 			isa = PBXGroup;
 			children = (
 				DF8AE4401A1EB14D00D690B6 /* WatchKit.framework */,
+				5EAE8F2EE5AFA2A6C9CE184A /* BuddyBuildSDK.framework */,
+				6893BD74484910FFF3B30F47 /* AssetsLibrary.framework */,
+				52A52551D56CB9A7F4734F4C /* CoreText.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -451,10 +465,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Snake/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -464,10 +483,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Snake/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 			};
 			name = Release;
 		};
